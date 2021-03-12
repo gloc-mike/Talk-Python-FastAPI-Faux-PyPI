@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 fastapi = "*"
 uvicorn = "*"
+fastapi-chameleon = {git = "git@github.com:mikeckennedy/fastapi-chameleon.git", editable = false}
 
 [dev-packages]
 
