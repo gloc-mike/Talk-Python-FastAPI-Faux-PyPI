@@ -16,5 +16,29 @@ def index(user='anonymous'):
     }
 
 
+@app.get('/about')
+def about():
+    return {}
+
+
+@app.get('/account')
+def index():
+    return {}
+
+
+@app.get('/account/register')
+def register():
+    return {}
+
+
+@app.get('/account/login')
+def about():
+    return {}
+
+
+@app.get('/account/logout')
+def about():
+    return {}
+
 if __name__ == '__main__':
     uvicorn.run(app)
