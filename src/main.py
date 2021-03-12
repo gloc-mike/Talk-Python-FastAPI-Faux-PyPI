@@ -4,12 +4,16 @@ import uvicorn
 app = fastapi.FastAPI()
 
 
-@app.get('/')
+@app.get("/")
 def index():
-    # return {
-    #     'message': "Hello World"
-    # }
-    return "Hello World"
+    content = """
+    <h1>Hello FastAPI Web App</h1>
+    
+    <div>This is where our faux PyPI appl will live!</div>
+    
+    """
+    return fastapi.responses.HTMLResponse(content)
 
 
-uvicorn.run(app)
+if __name__ == "__main__":
+    uvicorn.run(app)
