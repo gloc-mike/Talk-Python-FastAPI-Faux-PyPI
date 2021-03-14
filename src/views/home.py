@@ -13,5 +13,6 @@ def index(user='anonymous'):
 
 
 @router.get('/about')
+@template()
 def about():
     return {}

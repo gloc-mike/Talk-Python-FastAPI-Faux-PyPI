@@ -1,20 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<div metal:use-macro="load: ../shared/_layout.pt">
 
-    <h1>Faux PyPI Site Here Soon!</h1>
-    <div>User: ${user_name}</div>
+    <div metal:fill-slot="content" tal:omit-tag="True">
+        <div>User: ${user_name}</div>
 
-    <div>
-        <ul>
-            <li>fastapi</li>
-            <li>uvicorn</li>
-            <li>chameleon - not build into FastApi -> use fastapi-chameleon</li>
-        </ul>
+        <div>
+            <ul>
+                <li>fastapi</li>
+                <li>uvicorn</li>
+                <li>chameleon - not build into FastApi -> use fastapi-chameleon</li>
+            </ul>
+        </div>
     </div>
-</body>
-</html>
+</div>
