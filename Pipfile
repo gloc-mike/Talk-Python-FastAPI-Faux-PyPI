@@ -8,6 +8,7 @@ fastapi = "*"
 uvicorn = "*"
 fastapi-chameleon = {git = "git@github.com:mikeckennedy/fastapi-chameleon.git", editable = false}
 aiofiles = "*"
+starlette = "*"
 
 [dev-packages]
 
